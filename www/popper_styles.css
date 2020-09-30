@@ -1,0 +1,50 @@
+.tip {
+  visibility: hidden;
+}
+
+.start {
+  visibility: visible;
+}
+
+
+.baloon, .modal-content {
+  background-color: #ddddff;
+        color: #111111;
+        font-weight: bold;
+        padding: 10px 30px 20px 30px;
+        font-size: 16px;
+        border-radius: 4px;
+}
+
+.baloon > button {
+  float: right;
+  font-weight: bold;
+}
+                     
+.arrow, .arrow::before {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  z-index: -1;
+}
+
+.arrow::before {
+  content: "";
+  transform: rotate(45deg);
+  background: #ddddff;
+}
+.baloon[data-popper-placement^="top"] > .arrow {
+  bottom: -8px;
+}
+
+.baloon[data-popper-placement^="bottom"] > .arrow {
+  top: -8px;
+}
+
+.baloon[data-popper-placement^="left"] > .arrow {
+  right: -8px;
+}
+
+.baloon[data-popper-placement^="right"] > .arrow {
+  left: -8px;
+}
