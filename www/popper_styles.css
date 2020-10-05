@@ -1,11 +1,23 @@
 .tip {
   visibility: hidden;
+  opacity: 0;
 }
 
 .start {
   visibility: visible;
 }
 
+.tip-hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0.5s, opacity 0.5s;
+}
+
+.tip-active {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 0.5s ease-in-out 0.5s;
+}
 
 .baloon, .modal-content {
   background-color: #ddddff;
