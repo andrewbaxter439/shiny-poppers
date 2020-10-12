@@ -12,16 +12,16 @@ function advance() {
 }
 
 
-function advance1() {
-  document.querySelector('#tooltip1').classList.remove("tip-active");
-  document.querySelector('#tooltip1').classList.add("tip-hidden");
-  document.querySelector('#tooltip2').classList.add("tip-active");
-}
-
-function advance2() {
-  document.querySelector('#tooltip2').classList.remove("tip-active");
-  document.querySelector('#tooltip2').classList.add("tip-hidden");
-}
+// function advance1() {
+//   document.querySelector('#tooltip1').classList.remove("tip-active");
+//   document.querySelector('#tooltip1').classList.add("tip-hidden");
+//   document.querySelector('#tooltip2').classList.add("tip-active");
+// }
+// 
+// function advance2() {
+//   document.querySelector('#tooltip2').classList.remove("tip-active");
+//   document.querySelector('#tooltip2').classList.add("tip-hidden");
+// }
 
 const target1 = document.querySelector('#bins');
 const tooltip1 = document.querySelector('#tooltip1');
