@@ -1,6 +1,16 @@
+var order = 1;
+  
 function walkthrough() {
-  document.querySelector('#tooltip1').classList.add("tip-active");
+  document.querySelector(`[tip-number="${order}"]`).classList.add("tip-active");
 } 
+
+function advance() {
+  document.querySelector(`[tip-number="${order}"]`).classList.remove("tip-active");
+  document.querySelector(`[tip-number="${order}"]`).classList.add("tip-hidden");
+  document.querySelector(`[tip-number="${order+1}"]`).classList.add("tip-active");
+  order = order + 1;
+}
+
 
 function advance1() {
   document.querySelector('#tooltip1').classList.remove("tip-active");

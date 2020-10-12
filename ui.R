@@ -26,16 +26,18 @@ ui <- tags$body(
                         footer=NULL,
                         size="m"),
       tags$div(id = "tooltip1", `role`="tooltip",
+               `tip-number` = 1,
                class="baloon tip",
                HTML("<h3>Change the bins</h3>
                     <p>Why not try 20 bins?</p>
-                    <button class='btn btn-primary' onclick='advance1()'>Next &rarr;</button>"),
+                    <button class='btn btn-primary' onclick='advance()'>Next &rarr;</button>"),
                tags$div(id="arrow", class="arrow", `data-popper-arrow`="")),
       tags$div(id = "tooltip2", `role`="tooltip",
+               `tip-number` = 2,
                class="baloon tip",
                HTML("<h3>Check out the graph!</h3>
                     <p>The graph updates automatically!</p>
-                    <button class='btn btn-primary' onclick='advance2()'>Done &#10004;</button>"),
+                    <button class='btn btn-primary' onclick='advance()'>Done &#10004;</button>"),
                tags$div(id="arrow2", class= "arrow", `data-popper-arrow`=""))
     ),
     
